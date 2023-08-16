@@ -3,8 +3,5 @@
 
 def square_matrix_simple(matrix=[]):
     new_matrix = matrix.copy()
-
-    for i in range(len(matrix)):
-        new_matrix[i] = list(map(lambda x: x**2, matrix[i]))
-
+    new_matrix = (x**2 for x in (new_matrix))
     return (new_matrix)
